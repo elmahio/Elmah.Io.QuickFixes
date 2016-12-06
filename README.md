@@ -9,13 +9,13 @@ Repository for all quick fixes available on the Fix tab on the elmah.io UI:
 
 ## How to contribute
 
-In order to contribute one or more quick fixes, consider the following before creating a pull request. We do accept pull requests adding new quick fixes. Please consider if your quick fix brings value to everyone, before submitting a pull request.
+In order to contribute one or more quick fixes, consider the following before creating a pull request: does your quick fix brings value to everyone? If not, your pull request probably won't get merged.
 
 Quick fixes are implemented in C#. To add a new quick fix, create a fork of this repository and create a pull request after adding the code to your fork. Once cloned, create a new C# class in the _Fixes_ folder in the _Elmah.Io.QuickFixes_ project folder. The name of the class should be the action of the quick fix postfixed with _QuickFix_ (like _GenerateFavIconQuickFix_).
 
 Every quick fix needs to extend the `QuickFixBase` class and implement the `CanFix`-method. A quick fix can override the `Decorate`-method, if part of the message must be used for the quick fix text or link.
 
-Let's create a simple quick fix, creating a link to the _Hyper Text Coffee Pot Control Protocol_ article on Wikipedia, on all messages with a status code of 418 (I'm a teapot):
+Let's create a simple quick fix, creating a link to the [Hyper Text Coffee Pot Control Protocol](https://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol) article on Wikipedia, on all messages with a status code of `418` (I'm a teapot):
 
 ```csharp
 using System;
@@ -39,9 +39,9 @@ namespace Elmah.Io.QuickFixes.Fixes
 }
 ```
 
-In the constructor, we set the icon to an available icon from [Font Awesome](http://fontawesome.io/) (in this case _fa-coffee_ since no teapot is available in the icon set). The _Url_ and _Text_ properties are set in the constructor as well. In case we needed parts of the `Message` in the URL or text, we would set the value in the `Decorate`-method instead.
+In the constructor, we set `Icon` to an available icon name from [Font Awesome](http://fontawesome.io/) (in this case _fa-coffee_ since no teapot is available in the icon set). The `Url` and `Text` properties are set in the constructor as well. In case we needed parts of the `Message` in the URL or text, we would set the value in the `Decorate`-method instead.
 
-The `CanFix`-method is where the fun happens. The method will tell elmah.io if this quick fix should be shown on a message or not. In this case, we return true, if the message has a status code and the value is _418_.
+The `CanFix`-method is where the fun happens. The method will tell elmah.io if this quick fix should be shown on a message or not. In this case, we return true, if the message has a `StatusCode` and the value is `418`.
 
 Before creating a pull request, create a unit test of the new quick fix in the _Fixes_ folder in the _Elmah.Io.QuickFixes.Text_ folder. The name of the test must be the same as the quick fix postfixed with _Test_:
 
