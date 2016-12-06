@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmah.Io.QuickFixes", "Elmah.Io.QuickFixes\Elmah.Io.QuickFixes.csproj", "{37D4997F-1207-4F66-9CBD-5F874FECFB79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmah.Io.QuickFixes.Test", "Elmah.Io.QuickFixes.Test\Elmah.Io.QuickFixes.Test.csproj", "{48B31B52-C181-4511-984A-2595D40B237A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37D4997F-1207-4F66-9CBD-5F874FECFB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D4997F-1207-4F66-9CBD-5F874FECFB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D4997F-1207-4F66-9CBD-5F874FECFB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D4997F-1207-4F66-9CBD-5F874FECFB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B31B52-C181-4511-984A-2595D40B237A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B31B52-C181-4511-984A-2595D40B237A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B31B52-C181-4511-984A-2595D40B237A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B31B52-C181-4511-984A-2595D40B237A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
