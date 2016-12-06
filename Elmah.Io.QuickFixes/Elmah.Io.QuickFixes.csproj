@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fixes\DownloadResharperQuickFix.cs" />
+    <Compile Include="Fixes\ImATeapotDocumentationQuickFix.cs" />
     <Compile Include="Fixes\InstallBotBusterAppQuickFix.cs" />
     <Compile Include="Fixes\GenerateFavIconQuickFix.cs" />
     <Compile Include="Fixes\SearchGoogleQuickFix.cs" />

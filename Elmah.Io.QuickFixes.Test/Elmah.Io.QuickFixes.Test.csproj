@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fixes\DownloadResharperQuickFixTest.cs" />
+    <Compile Include="Fixes\ImATeapotDocumentationQuickFixTest.cs" />
     <Compile Include="Fixes\InstallBotBusterAppQuickFixTest.cs" />
     <Compile Include="Fixes\GenerateFavIconQuickFixTest.cs" />
     <Compile Include="Fixes\SearchStackOverflowQuickFixTest.cs" />
