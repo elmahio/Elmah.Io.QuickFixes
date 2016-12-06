@@ -13,13 +13,37 @@ namespace Elmah.Io.QuickFixes
                 .GetTypes()
                 .Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(QuickFixBase)))
                 .Select(t => (QuickFixBase) Activator.CreateInstance(t))
-                .Where(i => i.CanFix(message))
-                .Select(i => i.Decorate(message))
+                .Where(i => CanFix(message, i))
+                .Select(i => Decorate(message, i))
                 .Where(
                     i =>
-                        !string.IsNullOrWhiteSpace(i.Icon) && i.Icon.StartsWith("fa-") &&
+                        i != null && !string.IsNullOrWhiteSpace(i.Icon) && i.Icon.StartsWith("fa-") &&
                         !string.IsNullOrWhiteSpace(i.Text) && i.Url != null)
                 .ToList();
+        }
+
+        private static QuickFixBase Decorate(Message message, QuickFixBase i)
+        {
+            try
+            {
+                return i.Decorate(message);
+            }
+            catch
+            {
+                return i;
+            }
+        }
+
+        private static bool CanFix(Message message, QuickFixBase i)
+        {
+            try
+            {
+                return i.CanFix(message);
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
