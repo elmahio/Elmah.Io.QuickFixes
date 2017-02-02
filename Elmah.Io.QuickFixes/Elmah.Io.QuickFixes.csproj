@@ -47,6 +47,7 @@
     <Compile Include="Fixes\SearchGoogleQuickFix.cs" />
     <Compile Include="Fixes\SearchStackOverflowQuickFix.cs" />
     <Compile Include="Fixes\TroubleshootDotNetExceptionsQuickFix.cs" />
+    <Compile Include="Fixes\WatchVideoAboutMvcRoutesAndControllersQuickFix.cs" />
     <Compile Include="Fixes\WatchVideoAboutMvcParametersQuickFix.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
