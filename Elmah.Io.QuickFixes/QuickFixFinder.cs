@@ -15,10 +15,8 @@ namespace Elmah.Io.QuickFixes
                 .Select(t => (QuickFixBase) Activator.CreateInstance(t))
                 .Where(i => CanFix(message, i))
                 .Select(i => Decorate(message, i))
-                .Where(
-                    i =>
-                        i != null && !string.IsNullOrWhiteSpace(i.Icon) && i.Icon.StartsWith("fa-") &&
-                        !string.IsNullOrWhiteSpace(i.Text) && i.Url != null)
+                .Where(i => !string.IsNullOrWhiteSpace(i?.Icon) && i.Icon.StartsWith("fa-") && !string.IsNullOrWhiteSpace(i.Text) && i.Url != null)
+                .OrderBy(i => i.Text)
                 .ToList();
         }
 
