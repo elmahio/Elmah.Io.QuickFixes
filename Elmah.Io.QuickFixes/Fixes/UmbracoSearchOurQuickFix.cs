@@ -14,8 +14,8 @@ namespace Elmah.Io.QuickFixes.Fixes
         {
             return !string.IsNullOrWhiteSpace(message.Severity)
                    && (message.Severity == "Error" || message.Severity == "Warning" || message.Severity == "Fatal")
-                   && !string.IsNullOrWhiteSpace(message.Detail)
-                   && message.Detail.ToLower().Contains("umbraco");
+                   && (!string.IsNullOrWhiteSpace(message.Detail) && message.Detail.ToLower().Contains("umbraco")
+                   || !string.IsNullOrWhiteSpace(message.Source) && message.Source.ToLower().Contains("umbraco"));
 
         }
 

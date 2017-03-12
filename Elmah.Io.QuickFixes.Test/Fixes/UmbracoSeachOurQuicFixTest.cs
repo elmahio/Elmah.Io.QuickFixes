@@ -6,17 +6,18 @@ namespace Elmah.Io.QuickFixes.Test.Fixes
 {
     public class UmbracoSeachOurQuicFixTest
     {
-        [TestCase(false, null, "An Umbraco error")] // Don't fix umbraco messages without severity
-        [TestCase(false, "Error", null)] // Don't fix errors without detail
-        [TestCase(false, "Information", "An Umbraco error")] // Don't fix information
-        [TestCase(true, "Warning", "An Umbraco error")] // Fix umbraco warnings
-        [TestCase(true, "Error", "An Umbraco error")] // Fix umbraco errors
-        [TestCase(true, "Fatal", "An Umbraco error")] // Fix umbraco fatals
-        [TestCase(false, "Error", "Other error")] // Don't fix non-umbraco errors
-        public void CanFix(bool expectedCanFix, string severity, string detail)
+        [TestCase(true, "Warning", "An Umbraco error", null)] // Fix umbraco warnings
+        [TestCase(true, "Error", "An Umbraco error", null)] // Fix umbraco errors
+        [TestCase(true, "Fatal", "An Umbraco error", null)] // Fix umbraco fatals
+        [TestCase(true, "Fatal", null, "Umbraco.Core.UmbracoApplicationBase")] // Fix umbraco fatals
+        [TestCase(false, null, "An Umbraco error", null)] // Don't fix umbraco messages without severity
+        [TestCase(false, "Error", null, null)] // Don't fix errors without detail
+        [TestCase(false, "Information", "An Umbraco error", null)] // Don't fix information
+        [TestCase(false, "Error", "Other error", null)] // Don't fix non-umbraco errors
+        public void CanFix(bool expectedCanFix, string severity, string detail, string source)
         {
             var quickFix = new UmbracoSearchOurQuickFix();
-            var canFix = quickFix.CanFix(new Message {Severity = severity, Detail = detail});
+            var canFix = quickFix.CanFix(new Message {Severity = severity, Detail = detail, Source = source});
             Assert.That(canFix, Is.EqualTo(expectedCanFix));
         }
 
