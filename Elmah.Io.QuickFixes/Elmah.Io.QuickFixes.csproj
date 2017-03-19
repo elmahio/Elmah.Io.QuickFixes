@@ -46,6 +46,7 @@
     <Compile Include="Fixes\GenerateFavIconQuickFix.cs" />
     <Compile Include="Fixes\SearchGoogleQuickFix.cs" />
     <Compile Include="Fixes\SearchStackOverflowQuickFix.cs" />
+    <Compile Include="Fixes\MsdnDocumentationQuickFix.cs" />
     <Compile Include="Fixes\TroubleshootDotNetExceptionsQuickFix.cs" />
     <Compile Include="Fixes\UmbracoReadRazorDocumentationQuickFix.cs" />
     <Compile Include="Fixes\UmbracoSearchOurQuickFix.cs" />
