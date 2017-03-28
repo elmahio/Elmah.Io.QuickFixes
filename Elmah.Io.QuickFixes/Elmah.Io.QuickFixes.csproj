@@ -49,6 +49,7 @@
     <Compile Include="Fixes\MsdnDocumentationQuickFix.cs" />
     <Compile Include="Fixes\TroubleshootDotNetExceptionsQuickFix.cs" />
     <Compile Include="Fixes\Umbraco\UmbracoCorruptCacheQuickFix.cs" />
+    <Compile Include="Fixes\Umbraco\UmbracoDatalayerTimeoutQuickFix.cs" />
     <Compile Include="Fixes\Umbraco\UmbracoModelBindingBugQuickFix.cs" />
     <Compile Include="Fixes\Umbraco\UmbracoReadCustomControllersDocumentationQuickFix.cs" />
     <Compile Include="Fixes\Umbraco\UmbracoReadRazorDocumentationQuickFix.cs" />
