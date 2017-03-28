@@ -48,8 +48,8 @@
     <Compile Include="Fixes\SearchStackOverflowQuickFix.cs" />
     <Compile Include="Fixes\MsdnDocumentationQuickFix.cs" />
     <Compile Include="Fixes\TroubleshootDotNetExceptionsQuickFix.cs" />
-    <Compile Include="Fixes\UmbracoReadRazorDocumentationQuickFix.cs" />
-    <Compile Include="Fixes\UmbracoSearchOurQuickFix.cs" />
+    <Compile Include="Fixes\Umbraco\UmbracoReadRazorDocumentationQuickFix.cs" />
+    <Compile Include="Fixes\Umbraco\UmbracoSearchOurQuickFix.cs" />
     <Compile Include="Fixes\WatchVideoAboutMvcRoutesAndControllersQuickFix.cs" />
     <Compile Include="Fixes\WatchVideoAboutMvcParametersQuickFix.cs" />
     <Compile Include="Message.cs" />

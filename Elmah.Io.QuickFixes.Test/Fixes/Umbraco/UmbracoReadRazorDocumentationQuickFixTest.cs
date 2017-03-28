@@ -1,7 +1,8 @@
 ﻿using Elmah.Io.QuickFixes.Fixes;
+using Elmah.Io.QuickFixes.Fixes.Umbraco;
 using NUnit.Framework;
 
-namespace Elmah.Io.QuickFixes.Test.Fixes
+namespace Elmah.Io.QuickFixes.Test.Fixes.Umbraco
 {
     public class UmbracoReadRazorDocumentationQuickFixTest
     {

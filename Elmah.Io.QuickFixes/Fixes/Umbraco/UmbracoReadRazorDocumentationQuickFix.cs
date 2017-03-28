@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Elmah.Io.QuickFixes.Fixes
+namespace Elmah.Io.QuickFixes.Fixes.Umbraco
 {
     public class UmbracoReadRazorDocumentationQuickFix : QuickFixBase
     {
