@@ -52,6 +52,7 @@
     <Compile Include="Fixes\SearchStackOverflowQuickFixTest.cs" />
     <Compile Include="Fixes\SearchGoogleQuickFixTest.cs" />
     <Compile Include="Fixes\TroubleshootDotNetExceptionsQuickFixTest.cs" />
+    <Compile Include="Fixes\Umbraco\UmbracoCorruptCacheQuickFixTest.cs" />
     <Compile Include="Fixes\Umbraco\UmbracoModelBindingBugQuickFixTest.cs" />
     <Compile Include="Fixes\Umbraco\UmbracoReadCustomControllersDocumentationQuickFixTest.cs" />
     <Compile Include="Fixes\Umbraco\UmbracoReadRazorDocumentationQuickFixTest.cs" />
