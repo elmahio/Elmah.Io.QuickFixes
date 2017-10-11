@@ -45,6 +45,7 @@
     <Compile Include="Fixes\InstallBotBusterAppQuickFix.cs" />
     <Compile Include="Fixes\GenerateFavIconQuickFix.cs" />
     <Compile Include="Fixes\SearchGoogleQuickFix.cs" />
+    <Compile Include="Fixes\SearchMsdnQuickFix.cs" />
     <Compile Include="Fixes\SearchStackOverflowQuickFix.cs" />
     <Compile Include="Fixes\MsdnDocumentationQuickFix.cs" />
     <Compile Include="Fixes\TroubleshootDotNetExceptionsQuickFix.cs" />
