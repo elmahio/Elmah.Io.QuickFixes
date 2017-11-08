@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elmah.Io.QuickFixes.Test</RootNamespace>
     <AssemblyName>Elmah.Io.QuickFixes.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,6 +50,7 @@
     <Compile Include="Fixes\ImATeapotDocumentationQuickFixTest.cs" />
     <Compile Include="Fixes\InstallBotBusterAppQuickFixTest.cs" />
     <Compile Include="Fixes\GenerateFavIconQuickFixTest.cs" />
+    <Compile Include="Fixes\IpWhoIsQuickFixTest.cs" />
     <Compile Include="Fixes\MsdnDocumentationQuickFixTest.cs" />
     <Compile Include="Fixes\SearchMsdnQuickFixTest.cs" />
     <Compile Include="Fixes\SearchStackOverflowQuickFixTest.cs" />
