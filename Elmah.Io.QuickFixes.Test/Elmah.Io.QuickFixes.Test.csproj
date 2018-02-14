@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fixes\CertificateQuickFixTest.cs" />
-    <Compile Include="Fixes\DownloadResharperQuickFixTest.cs" />
     <Compile Include="Fixes\ImATeapotDocumentationQuickFixTest.cs" />
     <Compile Include="Fixes\InstallBotBusterAppQuickFixTest.cs" />
     <Compile Include="Fixes\GenerateFavIconQuickFixTest.cs" />
