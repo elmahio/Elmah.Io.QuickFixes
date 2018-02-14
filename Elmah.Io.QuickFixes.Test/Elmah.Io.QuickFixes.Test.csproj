@@ -53,6 +53,7 @@
     <Compile Include="Fixes\GenerateFavIconQuickFixTest.cs" />
     <Compile Include="Fixes\IpWhoIsQuickFixTest.cs" />
     <Compile Include="Fixes\MsdnDocumentationQuickFixTest.cs" />
+    <Compile Include="Fixes\RenewSslCertificateQuickFixTest.cs" />
     <Compile Include="Fixes\SearchMsdnQuickFixTest.cs" />
     <Compile Include="Fixes\SearchStackOverflowQuickFixTest.cs" />
     <Compile Include="Fixes\SearchGoogleQuickFixTest.cs" />
