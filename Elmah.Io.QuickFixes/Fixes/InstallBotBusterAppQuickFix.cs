@@ -27,7 +27,7 @@ namespace Elmah.Io.QuickFixes.Fixes
 
         public override QuickFixBase Decorate(Message message)
         {
-            Url = new Uri("https://elmah.io/errorlog/settings/?logId=" + message.LogId + "#apps");
+            Url = new Uri("https://app.elmah.io/errorlog/settings/?logId=" + message.LogId + "#apps");
             return this;
         }
     }
