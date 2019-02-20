@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fixes\BlogPostsQuickFix.cs" />
     <Compile Include="Fixes\CertificateQuickFix.cs" />
     <Compile Include="Fixes\DnsIssuesQuickFix.cs" />
     <Compile Include="Fixes\ImATeapotDocumentationQuickFix.cs" />
