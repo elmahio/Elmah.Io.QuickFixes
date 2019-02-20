@@ -6,12 +6,12 @@ namespace Elmah.Io.QuickFixes.Test.Fixes
 {
     public class BlogPostsQuickFixTest
     {
-        [TestCase(true, "System.Net.WebException", "https://blog.elmah.io/debugging-system-net-webexception-the-remote-name-could-not-be-resolved/")]
-        [TestCase(true, "System.OutOfMemoryException", "https://blog.elmah.io/debugging-system-outofmemoryexception-using-net-tools/")]
-        [TestCase(false, null, "")]
-        [TestCase(false, "", "")]
-        [TestCase(false, "nothing valid here", "")]
-        public void CanFixByUserAgent(bool canFix, string type, string url)
+        [TestCase(true, "System.Net.WebException", "https://blog.elmah.io/debugging-system-net-webexception-the-remote-name-could-not-be-resolved/", "Debugging: System.Net.WebException - The remote name could not be resolved")]
+        [TestCase(true, "System.OutOfMemoryException", "https://blog.elmah.io/debugging-system-outofmemoryexception-using-net-tools/", "Debugging System.OutOfMemoryException using .NET tools")]
+        [TestCase(false, null, "", null)]
+        [TestCase(false, "", "", null)]
+        [TestCase(false, "nothing valid here", "", null)]
+        public void CanFix(bool canFix, string type, string url, string title)
         {
             var quickFix = new BlogPostsQuickFix();
             var message = new Message { Type = type };
@@ -20,7 +20,7 @@ namespace Elmah.Io.QuickFixes.Test.Fixes
             if (canFix)
             {
                 var decorated = quickFix.Decorate(message);
-                Assert.That(decorated.Text, Is.EqualTo($"Blog post about {type}"));
+                Assert.That(decorated.Text, Is.EqualTo(title));
                 Assert.That(decorated.Url.ToString(), Is.EqualTo(url));
             }
         }
