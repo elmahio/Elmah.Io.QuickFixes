@@ -16,6 +16,7 @@ namespace Elmah.Io.QuickFixes.Fixes
             {
                 {"System.Net.WebException", new Tuple<Uri, string>(new Uri("https://blog.elmah.io/debugging-system-net-webexception-the-remote-name-could-not-be-resolved/"), "Debugging: System.Net.WebException - The remote name could not be resolved")},
                 {"System.OutOfMemoryException", new Tuple<Uri, string>(new Uri("https://blog.elmah.io/debugging-system-outofmemoryexception-using-net-tools/"), "Debugging System.OutOfMemoryException using .NET tools")},
+                {"System.IO.FileNotFoundException", new Tuple<Uri, string>(new Uri("https://blog.elmah.io/debugging-system-io-filenotfoundexception-cause-and-fix/"), "Debugging System.IO.FileNotFoundException - Cause and fix")},
             };
             Icon = "fa-book";
         }
