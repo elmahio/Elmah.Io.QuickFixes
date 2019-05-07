@@ -6,9 +6,10 @@ namespace Elmah.Io.QuickFixes.Test.Fixes
 {
     public class BlogPostsQuickFixTest
     {
-        [TestCase(true, "System.Net.WebException", "https://blog.elmah.io/debugging-system-net-webexception-the-remote-name-could-not-be-resolved/", "Debugging: System.Net.WebException - The remote name could not be resolved")]
-        [TestCase(true, "System.OutOfMemoryException", "https://blog.elmah.io/debugging-system-outofmemoryexception-using-net-tools/", "Debugging System.OutOfMemoryException using .NET tools")]
-        [TestCase(true, "System.IO.FileNotFoundException", "https://blog.elmah.io/debugging-system-io-filenotfoundexception-cause-and-fix/", "Debugging System.IO.FileNotFoundException - Cause and fix")]
+        [TestCase(true, "System.Net.WebException", "https://blog.elmah.io/debugging-system-net-webexception-the-remote-name-could-not-be-resolved/", "Debugging System.Net.WebException blog post")]
+        [TestCase(true, "System.OutOfMemoryException", "https://blog.elmah.io/debugging-system-outofmemoryexception-using-net-tools/", "Debugging System.OutOfMemoryException blog post")]
+        [TestCase(true, "System.IO.FileNotFoundException", "https://blog.elmah.io/debugging-system-io-filenotfoundexception-cause-and-fix/", "Debugging System.IO.FileNotFoundException blog post")]
+        [TestCase(true, "System.UnauthorizedAccessException", "https://blog.elmah.io/debugging-system-unauthorizedaccessexception/", "Debugging System.UnauthorizedAccessException blog post")]
         [TestCase(false, null, "", null)]
         [TestCase(false, "", "", null)]
         [TestCase(false, "nothing valid here", "", null)]
